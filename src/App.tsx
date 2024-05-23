@@ -1,17 +1,12 @@
-import { useState } from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom'
-
-//import page components
-import Home from './pages/Home'
-
+import { Fragment } from 'react/jsx-runtime'
+import GlobalStyle from './styles/globalStyles'
+import MainRouter from './routes'
 function App() {
-
   return (
-    <HashRouter>
-      <Routes>
-        <Route path='/' Component={Home}  />
-      </Routes>
-    </HashRouter>
+    <Fragment>
+      <GlobalStyle />
+      <MainRouter />
+    </Fragment>
   )
 }
 
